@@ -1,0 +1,22 @@
+<header>
+    <h1>Twitter</h1>
+    <nav>
+        <ul>
+            {% if user.is_authenticated %}
+                <li>
+                    <a href="" class="btn">Home</a>
+                </li>
+                <li>
+                    <a href="" class="btn">Postar</a>
+                </li>
+                <li>
+                    <a href="" class="btn">Sair</a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="{% url "signup" %}" class="btn">Cadastrar</a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>
