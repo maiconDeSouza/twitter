@@ -6,7 +6,7 @@ from .models import Tweet
 
 @login_required
 def home(request):
-    tweets = Tweet.objects.all()
+    tweets = Tweet.objects.by_user(request.user)
     context = {
         'tweets': tweets
     }

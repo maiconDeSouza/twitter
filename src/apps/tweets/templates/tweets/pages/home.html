@@ -3,7 +3,10 @@
 {% block title %}Twitter{% endblock title %}
 
 {% block content %}
-    <h2>Tweets</h2>
+    <h2>Bem-vindo ao Tweets!</h2>
+    <p>
+        Olá, {{user.username}}!
+    </p>
     <ul class="home">
         {% for tweet in tweets  %}
             <li>
