@@ -4,12 +4,12 @@
 
 
 {% block content %}
-    <ul>
+    <ul class="logout">
         <li>
             <a href="{% url "home" %}" class="btn">Home</a>
         </li>
         <li>
-            <form method="post" action="{% url 'logout' %}" style="display:inline">
+            <form method="post" action="{% url 'logged_out' %}" style="display:inline">
                 {% csrf_token %}
                 <button type="submit" class="btn">Sair</button>
             </form>

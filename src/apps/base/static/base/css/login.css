@@ -9,11 +9,4 @@ form.form-login input {
     border-radius: 8px;
 }
 
-button.btn {
-    padding: 0.5rem 1rem;
-    background-color: var(--twitter-blue);
-    color: var(--twitter-white);
-    font-weight: 900;
-    border: none;
-    border-radius: 8px;
-}
+

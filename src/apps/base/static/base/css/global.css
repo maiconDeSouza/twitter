@@ -30,7 +30,7 @@ body {
   color: var(--twitter-dark);
 }
 
-a.btn {
+a.btn, button.btn {
   display: block;
   padding: 1rem;
   background-color: var(--twitter-blue);
@@ -38,9 +38,10 @@ a.btn {
   font-weight: 900;
   border-radius: 8px;
   transition: all .7s;
+  border: none;
 }
 
-a.btn:hover {
+a.btn:hover, button.btn:hover {
   background-color: var(--twitter-dark);
 }
 

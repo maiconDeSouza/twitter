@@ -1,7 +1,3 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render  # noqa F401
 
 # Create your views here.
-
-
-def home(request):
-    return HttpResponse('oi')
